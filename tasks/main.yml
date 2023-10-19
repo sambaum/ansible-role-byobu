@@ -15,7 +15,6 @@
     question: byobu/launch-by-default
     value: true
     vtype: boolean
-    # when: byobu_launch_by_default
 
 - name: Create ~/.byobu/ directory
   become: yes
@@ -31,7 +30,6 @@
   template:
     src: tmux.conf.j2
     dest: "~/.byobu/.tmux.conf"
-
 
 # TODO: remove:
 # group_vars/all/vars.yml:byobu_install: true
